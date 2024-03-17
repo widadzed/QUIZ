@@ -15,25 +15,7 @@ document.getElementById("start-quiz-btn").addEventListener("click", async functi
     }
   }
 
- /* function displayQuestions(questions) {
-    const quizQuestionsDiv = document.getElementById("quiz-questions");
-    quizQuestionsDiv.innerHTML = '';
-  
-    questions.forEach((question, index) => {
-      const questionDiv = document.createElement("div");
-      questionDiv.innerHTML = `
-        <p><strong>Question ${index +1}:</strong> ${question.question}</p>
-        <ul>
-          ${question.incorrect_answers.map(answer => `<li>${answer}</li>`).join('')}
-          <li>${question.correct_answer}</li>
-        </ul>
-      `;
-      quizQuestionsDiv.appendChild(questionDiv);
-    });
-  
-    document.getElementById("start-quiz-btn").style.display = "none";
-    document.getElementById("submit-answers-btn").style.display = "block";
-  }*/
+
 
   function displayQuestions(questions) {
     const quizQuestionsDiv = document.getElementById("quiz-questions");
